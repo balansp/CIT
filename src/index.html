@@ -1,0 +1,346 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cape Institue of Technology</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .loading-box {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background: linear-gradient(-134deg, #002025 0%, #3f3251 98%) #343536;
+        z-index: 1000;
+      }
+      .loading-txt {
+        color: #fff;
+        left: 0;
+        opacity: 0.4;
+        position: absolute;
+        text-align: center;
+        top: calc(50% + 75px);
+        width: 100%;
+        z-index: 1001;
+        text-shadow: 0 0 10px #fff;
+      }
+      .loading-box img {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        left: 50%;
+        opacity: 0.2;
+        position: absolute;
+        top: 50%;
+        margin-left: -50px;
+        margin-top: -50px;
+      }
+      .circle-mask {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 60px;
+        height: 120px;
+        margin-left: -60px;
+        margin-top: -60px;
+        overflow: hidden;
+        -webkit-transform-origin: 60px 60px;
+        -moz-transform-origin: 60px 60px;
+        -ms-transform-origin: 60px 60px;
+        transform-origin: 60px 60px;
+        -webkit-mask-image: -webkit-linear-gradient(top, #000000, rgba(0, 0, 0, 0));
+        -webkit-animation: rotate 1.2s infinite linear;
+        -moz-animation: rotate 1.2s infinite linear;
+        animation: rotate 1.2s infinite linear;
+      }
+      .circle-mask .loader-circle {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+      }
+
+      @-webkit-keyframes rotate {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      @-moz-keyframes rotate {
+        0% {
+          -moz-transform: rotate(0deg);
+        }
+        100% {
+          -moz-transform: rotate(360deg);
+        }
+      }
+      @keyframes rotate {
+        0% {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+        };
+      }
+
+    </style>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]> <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script> <![endif]-->
+  </head>
+  <body>
+    <div class="loading-box">
+
+      <div class="circle-mask">
+        <div class="loader-circle"></div>
+      </div>
+      <img src="img/logo.jpg" width="100" height="100"/>
+      <div class="loading-txt">Loading...</div>
+
+    </div>
+
+    <div class="background">
+      <video id="bgVideo" onended="this.play()" preload="auto" autoplay muted poster="assets/cit.jpg">
+        <source src="assets/cit.mp4"/>
+      </video>
+      <img id="bgImg" src="assets/cit.jpg"/>
+    </div>
+    <div class="grid"></div>
+    <header>
+      <nav class="top-nav">
+        <ul class="float-left nav-icons">
+          <li>
+            <a href="" class="fa fa-youtube white"></a>
+          </li>
+          <li>
+            <a href="" class="fa fa-twitter white"></a>
+          </li>
+          <li>
+            <a href="" class="fa fa-google-plus white"></a>
+          </li>
+          <li>
+            <a href="" class="fa fa-facebook white"></a>
+          </li>
+          <div class="clear"></div>
+        </ul>
+
+        <ul class="float-right nav-links">
+          <li>
+            <a href="">Alumini</a>
+          </li>
+          <li>
+            <a href="">EDC</a>
+          </li>
+          <li>
+            <a href="">Clubs</a>
+          </li>
+          <li>
+            <a href="">Sports</a>
+          </li>
+          <div class="clear"></div>
+        </ul>
+
+        <div class="clear"></div>
+      </nav>
+
+    </header>
+    <section class="main-content">
+      <article class="logo-article">
+        <div class="logo-holder float-left">
+          <img src="img/logo.jpg" class="logo-img"/>
+          <h1 class="brand-name">Cape Institue of Technology</h1>
+        </div>
+        <div class="search-holder float-right">
+          <form>
+            <input type="text" placeholder="Search" class="search-input"/>
+            <a class="fa fa-search search-btn"></a>
+
+          </form>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </article>
+
+    <article class="main-menu-article">
+      <h2 class="menu-title">Life @ Cape</h2>
+      <p class="sub-title">
+        Is always splendiferous
+      </p>
+      <nav>
+        <ul>
+          <li>
+            <a href="">About Us</a>
+          </li>
+          <li>
+            <a href="">Academics</a>
+          </li>
+          <li>
+            <a href="">Admissions</a>
+          </li>
+          <li>
+            <a href="">Events</a>
+          </li>
+          <li>
+            <a href="">Location and Maps</a>
+          </li>
+          <li>
+            <a href="">Programs</a>
+          </li>
+          <li>
+            <a href="">Training and Placement</a>
+          </li>
+          <li>
+            <a href="">Latest News</a>
+          </li>
+        </ul>
+      </nav>
+    </article>
+
+    <article class="code-info">
+      <h3 class="code">4953</h3>
+      <h3>Counselling Code</h3>
+    </article>
+    <div class="divder">
+      <i class="fa fa-caret-down triangle"></i>
+    </div>
+  </section>
+
+  <section class="article-content">
+
+    <aside class="float-left cit">
+
+      <img src="img/logo-bw.png"/>
+      <div class="cit-details">
+        <h3>Cape Institute of Technology</h3>
+        <p>
+
+          ' CAPE' is the brain child of long ventured dream of great men and scholars with great positive attitude. Who are so passionate about the task of creating future generation.
+        </p>
+
+      </div>
+      <p class="more-detils">
+        Cape Institute of Technology is one of the premier Institutions in southern TamilNadu situated in between Nagercoil and Kanyakumari. According to the 2009 Anna University Ranking Cape Institute ranks first among all the self financing colleges in Tirunelveli district.
+        <ul>
+          <li>
+            <a href="">
+              <i class="fa fa-phone "></i>
+              <span>[+91]4652 268077</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-envelope "></i>
+              <span>contact@capeitech.org</span>
+            </a>
+
+          </li>
+          <div class="clear"></div>
+        </ul>
+      </p>
+
+    </aside>
+    <aside class="float-left news">
+      <h3>NEWS</h3>
+      <ul>
+        <li>
+          <a href="">Placement Training</a>
+        </li>
+        <li>
+          <a href="">Cape Family Republic day Get Together</a>
+        </li>
+        <li>
+          <a href="">Orientation programme for physical educational teachers</a>
+        </li>
+        <li>
+          <a href="">Placement Training for all Final year Students</a>
+        </li>
+        <li>
+          <a href="">Placement Drive 01.02.2016 Placement drive for the EEE
+          </a>
+        </li>
+        <li>
+          <a href="">Pongal Celebrations @ cape</a>
+        </li>
+        <li>
+          <a href="">CSE CETA Rocks</a>
+        </li>
+      </ul>
+
+    </aside>
+    <aside class="float-left quick-links">
+      <h3>QUICK LINKS</h3>
+      <ul class="float-left first-links">
+        <li>
+          <a href="">Research Scholars</a>
+        </li>
+        <li>
+          <a href="">Regulation</a>
+        </li>
+        <li>
+          <a href="">International
+          </a>
+        </li>
+        <li>
+          <a href="">Fee Structure</a>
+        </li>
+        <li>
+          <a href="">Scholarship</a>
+        </li>
+      </ul>
+
+      <ul class="float-left second-links">
+
+        <li>
+          <a href="">Funded Projects</a>
+        </li>
+        <li>
+          <a href="">Placement Statistics</a>
+        </li>
+        <li>
+          <a href="">Placement Training
+          </a>
+        </li>
+        <li>
+          <a href="">Old site
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="clear"></div>
+    </aside>
+    <div class="clear"></div>
+  </section>
+  <div class="divder">
+    &copy; Cape Institute of Technology
+  </div>
+
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+  <script>
+    window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')
+  </script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
